@@ -36,20 +36,28 @@
 
   <!-- NAVIGATION (Dark) -->
   <header class="bg-black text-white fixed w-full z-50 shadow-md">
-    <nav class="container mx-auto px-4 py-4 flex items-center justify-between">
+    <nav class="container mx-auto px-4 py-3 flex items-center justify-between">
       <!-- Logo / Title -->
-      <div class="flex items-center space-x-3">
+      <div class="flex items-center space-x-4">
         <img 
           src="mit_logo.png" 
           alt="MIT" 
-          class="h-8 w-auto hidden md:block filter " 
+          class="h-10 w-auto hidden md:block filter" 
         />
-        <h1 class="text-2xl font-bold tracking-wide">TASC</h1>
+        <div class="flex flex-col">
+          <h1 class="text-3xl font-bold font-cabin tracking-wide leading-tight">
+            TASC
+          </h1>
+          <span class="text-sm font-inter text-gray-300 leading-tight">
+            Tulsa Advanced Sciences Camp
+          </span>
+        </div>
       </div>
       <!-- Nav Links -->
-      <ul class="flex items-center space-x-6 text-sm font-inter">
+      <ul class="flex items-center space-x-6 text-sm font-inter font-medium">
         <li><a href="#about" class="hover:opacity-80 transition">About</a></li>
         <li><a href="#program" class="hover:opacity-80 transition">Program</a></li>
+        <li><a href="faq.html" class="hover:opacity-80 transition">FAQ</a></li>
         <li><a href="#contact" class="hover:opacity-80 transition">Contact</a></li>
       </ul>
     </nav>
@@ -72,15 +80,22 @@
     <div class="relative container mx-auto px-6 flex flex-col md:flex-row items-center">
       <!-- Hero Text -->
       <div class="md:w-1/2">
+        <!-- Program Name -->
+        <div class="mb-8">
+          <h1 class="text-4xl md:text-6xl font-bold font-cabin mb-2">Tulsa Advanced Sciences Camp</h1>
+          <!-- <h2 class="text-xl md:text-3xl font-cabin text-gray-300">
+            Tulsa Advanced Sciences Camp
+          </h2> -->
+        </div>
         <!-- Tagline -->
-        <h2 class="text-3xl md:text-5xl font-bold font-cabin mb-6 leading-tight">
-          Advancing Access and Equity in STEM
-        </h2>
-        <!-- Subheading -->
-        <h3 class="text-xl md:text-2xl font-inter mb-6 max-w-lg text-gray-100">
-          A transformative pre-college experience for exceptional Native American high school students, 
-          provided by MIT free of cost.
+        <h3 class="text-3xl md:text-4xl font-bold font-cabin mb-6 leading-tight">
+          Discover Your Potential, Make Lifelong Friends
         </h3>
+        <!-- Subheading -->
+        <h4 class="text-xl md:text-2xl font-inter mb-6 max-w-lg text-gray-100">
+          Join an inspiring community of Native American high school students for a life-changing summer experience at MIT. 
+          Learn, grow, and build lasting friendships - all expenses paid.
+        </h4>
         <!-- Program dates -->
         <p class="text-lg md:text-xl font-inter mb-6 max-w-lg text-gray-100">
           <span class="font-semibold">August 11-16, 2025</span><br/>
@@ -137,46 +152,45 @@
       <div class="md:flex md:space-x-12">
         <div class="md:w-1/2">
           <h2 class="font-cabin font-semibold text-3xl text-black mb-6">
-            Expanding Horizons Beyond Boundaries
+            Your Journey of Discovery Starts Here
           </h2>
           <p class="font-inter text-gray-700 leading-relaxed mb-6">
-            In a landscape where less than 10% of inner-reservation 
-            high schools offer Calculus BC and fewer than 5% provide 
-            serious computer science education, TASC bridges critical 
-            educational gaps in Native communities.
+            TASC is more than just a summer program - it's a chance to explore, 
+            make friends, and discover who you truly are. Together with other 
+            bright Native students, you'll dive into fascinating subjects while 
+            building confidence and lifelong connections.
           </p>
           <p class="font-inter text-gray-700 leading-relaxed mb-6">
-            Our intensive 6-day program goes beyond traditional STEM 
-            education. We combine cutting-edge technical training with 
-            workshops in rationality, decision theory, and leadership 
-            development.
+            Over six incredible days, you'll experience college life, tackle 
+            exciting hands-on projects, and learn from inspiring mentors who 
+            understand your journey. Whether you're passionate about math, life sciences, philosophy, history, or even the universe itself, you'll find your place here.
           </p>
           <p class="font-inter text-gray-700 leading-relaxed">
-            Our mission extends beyond technical education – we're 
-            building future leaders who will drive innovation while 
-            remaining deeply connected to their communities.
+            Join us in creating memories, building friendships, and taking the 
+            first step toward your dreams - all while staying connected to your 
+            cultural roots and community values.
           </p>
         </div>
         <div class="md:w-1/2 mt-8 md:mt-0 bg-gray-50 p-8 rounded-xl">
           <h3 class="font-cabin font-medium text-2xl text-black mb-6">
-            Program Impact
+            What You'll Experience
           </h3>
           <ul class="font-inter space-y-4 text-gray-600">
             <li class="flex items-start">
               <span class="text-blue-600 mr-3">•</span>
-              Access to advanced STEM education beyond standard curricula
+              Make lifelong friends who share your passions and dreams
             </li>
             <li class="flex items-start">
               <span class="text-blue-600 mr-3">•</span>
-              Development of critical thinking and decision-making skills
+              Learn amazing things in fun, interactive ways
             </li>
             <li class="flex items-start">
               <span class="text-blue-600 mr-3">•</span>
-              Connection to prestigious academic and research opportunities
+              Connect with mentors who believe in your potential
             </li>
             <li class="flex items-start">
               <span class="text-blue-600 mr-3">•</span>
-              Empowerment to create positive change in Native communities
+              Discover how you can make a difference in your community
             </li>
           </ul>
         </div>
@@ -282,9 +296,17 @@
           >
             Apply Now
           </a>
-          <p class="text-sm text-gray-500">
-            All program costs are fully covered regardless of nomination status
-          </p>
+          <div class="flex flex-col items-center space-y-2">
+            <p class="text-sm text-gray-500">
+              All program costs are fully covered regardless of nomination status
+            </p>
+            <a 
+              href="faq.html" 
+              class="text-blue-600 hover:text-blue-800 font-medium text-sm"
+            >
+              Have questions? Check our FAQ →
+            </a>
+          </div>
         </div>
       </div>
     </div>
